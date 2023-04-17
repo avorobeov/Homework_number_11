@@ -13,19 +13,16 @@ namespace Homework_number_11
             Random random = new Random();
             const int NumberToAdd1 = 3;
             const int NumberToAdd2 = 5;
-            int maximumNumber = 101;
+            int maximumNumber = 100;
             int minimalNumber = 0;
-            int randomNumber = random.Next(minimalNumber, maximumNumber);
+            int randomNumber =7/* random.Next(minimalNumber, maximumNumber)*/;
             int sumNumbers = 0;
 
             for (int i = minimalNumber; i <= randomNumber; i++)
             {
-                switch (i)
+                if (i % NumberToAdd1 == 0 || i % NumberToAdd2 == 0)
                 {
-                    case NumberToAdd1:
-                    case NumberToAdd2:
-                        sumNumbers += i;
-                        break;
+                    sumNumbers += i;
                 }
             }
 
