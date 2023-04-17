@@ -15,7 +15,7 @@ namespace Homework_number_11
             const int NumberToAdd2 = 5;
             int maximumNumber = 100;
             int minimalNumber = 0;
-            int randomNumber =7/* random.Next(minimalNumber, maximumNumber)*/;
+            int randomNumber = random.Next(minimalNumber, maximumNumber);
             int sumNumbers = 0;
 
             for (int i = minimalNumber; i <= randomNumber; i++)
